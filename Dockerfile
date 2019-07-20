@@ -1,8 +1,8 @@
 FROM debian:latest
 
 LABEL "maintainer"="Rahul Rai <rahul@rahul-rai.com>"
-LABEL "repository"="https://github.com/rahulrai-in/LaTeXResume"
-LABEL "homepage"="https://github.com/rahulrai-in/LaTeXResume"
+LABEL "repository"="https://github.com/rahulrai-in/ContinuousLaTeX"
+LABEL "homepage"="https://github.com/rahulrai-in/ContinuousLaTeX"
 
 LABEL "com.github.actions.name"="Convert to PDF"
 LABEL "com.github.actions.description"="Convert documents to PDF with xelatex."
@@ -14,8 +14,6 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install all TeX and LaTeX dependencies
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends \
-    fonts-font-awesome \
-    texlive-fonts-extra \
     texlive-fonts-recommended \
     texlive-generic-recommended \
     texlive-lang-english \
